@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nWv-rk-O4T">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Balance-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bank" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,21 +40,107 @@
                             <constraint firstItem="iSG-wX-dtW" firstAttribute="centerX" secondItem="EnJ-QH-hxo" secondAttribute="centerX" id="TgG-J9-jYP"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Balance" image="dollarsign.square" catalog="system" id="lda-1I-yzG"/>
                     <connections>
                         <outlet property="amountLabel" destination="iSG-wX-dtW" id="3FT-dc-k9Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="909.60000000000002" y="77.811094452773617"/>
+        </scene>
+        <!--Loan-->
+        <scene sceneID="AXG-uq-6mv">
+            <objects>
+                <viewController id="rex-ez-Gxd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXx-KG-dMu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OYE-mm-Svq">
+                                <rect key="frame" x="16" y="20" width="343" height="274.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="credit sum" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P6c-rz-HP1">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="srok month" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hDZ-of-OXl">
+                                        <rect key="frame" x="0.0" y="58.5" width="343" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="godovaya stavka" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jrn-Qz-MEm">
+                                        <rect key="frame" x="0.0" y="117" width="343" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежемесчный платеж" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVF-Cs-95C">
+                                        <rect key="frame" x="0.0" y="175.5" width="343" height="39.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                        <color key="textColor" systemColor="systemGray6Color"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" systemColor="placeholderTextColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1102" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5t-4Z-ham">
+                                        <rect key="frame" x="0.0" y="235" width="343" height="39.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                        <color key="textColor" systemColor="systemGray6Color"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" systemColor="placeholderTextColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dgu-Ag-Wxg"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="dgu-Ag-Wxg" firstAttribute="trailing" secondItem="OYE-mm-Svq" secondAttribute="trailing" constant="16" id="FRa-Hr-nQX"/>
+                            <constraint firstItem="OYE-mm-Svq" firstAttribute="top" secondItem="dgu-Ag-Wxg" secondAttribute="top" constant="20" id="bTe-MC-cad"/>
+                            <constraint firstItem="OYE-mm-Svq" firstAttribute="leading" secondItem="dgu-Ag-Wxg" secondAttribute="leading" constant="16" id="vcd-ae-cFx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Loan" image="creditcard" catalog="system" id="uw7-Kl-cVq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Plf-RC-fVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="77.811094452773617"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IUG-rx-d7g">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nWv-rk-O4T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1g5-Ar-dlF">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xBb-rn-utb"/>
+                        <segue destination="rex-ez-Gxd" kind="relationship" relationship="viewControllers" id="3Wx-XE-I76"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R45-Y1-Hg3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-29.600000000000001" y="77.811094452773617"/>
         </scene>
     </scenes>
     <resources>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="dollarsign.square" catalog="system" width="128" height="114"/>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
